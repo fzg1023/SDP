@@ -1,0 +1,99 @@
+# 轻量化候选：Swin-Lite 骨干 + 语义模块（删除生成/判别模块）
+# use_generative=false 时只保留 骨干(10.7M) + 语义模块(0.6M) ≈ 11.3M。
+# 诊断结论（见 supplement/）：生成模块是死重 —— adv_g 对骨干梯度=0（detach_fake）、
+# recon 梯度≈0.12、KNN-ZSL（生成特征）=20.2%（比随机还差），而头条指标「语义点积」
+# 只走 visual_projector + attr_encoder，完全绕过生成器。
+model:
+  name: "ESAG"
+  backbone_type: "swin_lite"
+  use_generative: false      # 关键开关：移除生成/判别模块
+  signal_length: 2048
+  envelope_order: 5
+  cwt_scales: 64
+  cwt_wavelet: "morl"
+
+  swin:
+    img_size: 64
+    patch_size: 4
+    in_chans: 2
+    embed_dim: 96
+    depths: [2, 2, 6, 2]
+    num_heads: [3, 6, 12, 24]
+    window_size: 8
+    mlp_ratio: 4.0
+    drop_rate: 0.0
+    attn_drop_rate: 0.0
+    drop_path_rate: 0.1
+
+  swin_lite:
+    embed_dim: 64
+    depths: [2, 2, 4, 2]
+    num_heads: [2, 4, 8, 16]
+
+  cbam:
+    reduction_ratio: 16
+    spatial_kernel_size: 7
+
+  semantic:
+    num_attributes: 32
+    attribute_dim: 128
+    hidden_dim: 256
+
+  generator:                 # 未使用（use_generative=false），仅为保持 config 结构兼容
+    latent_dim: 96
+    hidden_dim: 768
+    feature_dim: 768
+    num_layers: 4
+    afa_temperature: 0.5
+    afa_hidden_dim: null
+    f_sigmoid_beta: 1.5
+
+  inference:
+    k: 5
+    distance_metric: "cosine"
+    adaptive_k: true
+
+training:
+  batch_size: 64
+  num_epochs: 300
+  lr_generator: 0.0001
+  lr_discriminator: 0.0004
+  lr_feature: 0.001
+  weight_decay: 0.00005
+  scheduler: "cosine"
+  warmup_epochs: 15
+  loss_weights:
+    reconstruction: 1.0
+    adversarial: 0.3
+    semantic_align: 0.8
+    kl_divergence: 0.05
+    triplet_margin: 0.8
+  zero_shot:
+    seen_ratio: 0.7
+    num_generated: 400
+
+datasets:
+  cwru:
+    name: "CWRU"
+    path: "./data/cwru"
+    sample_rate: 12000
+    fault_types: ["Normal", "IR007", "IR014", "IR021", "B007", "B014", "B021", "OR007", "OR014", "OR021"]
+    loads: [0, 1, 2, 3]
+  pu:
+    name: "PU (Paderborn)"
+    path: "./data/pu"
+    sample_rate: 64000
+    fault_types: ["Healthy", "OR", "IR", "Compound"]
+  jnu:
+    name: "JNU"
+    path: "./data/jnu"
+    sample_rate: 50000
+    fault_types: ["Normal", "IR", "OR", "Ball"]
+
+runtime:
+  device: "auto"
+  seed: 42
+  num_workers: 4
+  save_dir: "./checkpoints"
+  log_dir: "./logs"
+  verbose: true

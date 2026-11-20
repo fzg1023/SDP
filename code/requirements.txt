@@ -1,0 +1,10 @@
+# SDP 零样本故障诊断 —— 依赖
+torch>=2.0
+numpy
+scipy
+PyWavelets
+matplotlib
+scikit-learn
+
+# 可选：仅 ACGAN-FG 基线（acgan_fg_on_gear.py）需要 TensorFlow
+# tensorflow>=2.0
