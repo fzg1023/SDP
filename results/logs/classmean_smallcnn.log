@@ -1,0 +1,122 @@
+[data] n=4321 classes=['½¡¿µ', '°şÂä', '¶Ï³İ', 'Ä¥Ëğ', 'ÁÑÎÆ']
+[prep] precomputing CWT images for ZSL split...
+[prep] zsl images=torch.Size([3457, 2, 64, 64])
+
+=== ²»¿É¼û¶Ô ½¡¿µ/ÁÑÎÆ | seen=['°şÂä', '¶Ï³İ', 'Ä¥Ëğ'] (n_seen=2160) ===
+  [seed 42] training...
+D:\Anaconda\envs\esag\lib\site-packages\torch\optim\lr_scheduler.py:198: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+    [train] epoch  10/50  reg=0.0067
+    [train] epoch  20/50  reg=0.0025
+    [train] epoch  30/50  reg=0.0010
+    [train] epoch  40/50  reg=0.0006
+    [train] epoch  50/50  reg=0.0005
+  [seed 49] training...
+    [train] epoch  10/50  reg=0.0061
+    [train] epoch  20/50  reg=0.0018
+    [train] epoch  30/50  reg=0.0012
+    [train] epoch  40/50  reg=0.0005
+    [train] epoch  50/50  reg=0.0004
+  [seed 56] training...
+    [train] epoch  10/50  reg=0.0056
+    [train] epoch  20/50  reg=0.0019
+    [train] epoch  30/50  reg=0.0009
+    [train] epoch  40/50  reg=0.0006
+    [train] epoch  50/50  reg=0.0004
+  [½¡¿µ/ÁÑÎÆ] ÊôĞÔÓàÏÒ=-0.301  unseen ×¼È·ÂÊ=27.91% (n=1297, seeds=3)
+
+=== ²»¿É¼û¶Ô °şÂä/Ä¥Ëğ | seen=['½¡¿µ', '¶Ï³İ', 'ÁÑÎÆ'] (n_seen=1937) ===
+  [seed 42] training...
+    [train] epoch  10/50  reg=0.0038
+    [train] epoch  20/50  reg=0.0015
+    [train] epoch  30/50  reg=0.0005
+    [train] epoch  40/50  reg=0.0003
+    [train] epoch  50/50  reg=0.0003
+  [seed 49] training...
+    [train] epoch  10/50  reg=0.0032
+    [train] epoch  20/50  reg=0.0019
+    [train] epoch  30/50  reg=0.0006
+    [train] epoch  40/50  reg=0.0004
+    [train] epoch  50/50  reg=0.0002
+  [seed 56] training...
+    [train] epoch  10/50  reg=0.0039
+    [train] epoch  20/50  reg=0.0010
+    [train] epoch  30/50  reg=0.0008
+    [train] epoch  40/50  reg=0.0004
+    [train] epoch  50/50  reg=0.0003
+  [°şÂä/Ä¥Ëğ] ÊôĞÔÓàÏÒ=-0.174  unseen ×¼È·ÂÊ=44.08% (n=1520, seeds=3)
+
+=== ²»¿É¼û¶Ô ¶Ï³İ/Ä¥Ëğ | seen=['½¡¿µ', '°şÂä', 'ÁÑÎÆ'] (n_seen=2097) ===
+  [seed 42] training...
+    [train] epoch  10/50  reg=0.0048
+    [train] epoch  20/50  reg=0.0018
+    [train] epoch  30/50  reg=0.0008
+    [train] epoch  40/50  reg=0.0004
+    [train] epoch  50/50  reg=0.0004
+  [seed 49] training...
+    [train] epoch  10/50  reg=0.0051
+    [train] epoch  20/50  reg=0.0019
+    [train] epoch  30/50  reg=0.0009
+    [train] epoch  40/50  reg=0.0005
+    [train] epoch  50/50  reg=0.0003
+  [seed 56] training...
+    [train] epoch  10/50  reg=0.0043
+    [train] epoch  20/50  reg=0.0015
+    [train] epoch  30/50  reg=0.0008
+    [train] epoch  40/50  reg=0.0005
+    [train] epoch  50/50  reg=0.0003
+  [¶Ï³İ/Ä¥Ëğ] ÊôĞÔÓàÏÒ=-0.411  unseen ×¼È·ÂÊ=71.91% (n=1360, seeds=3)
+
+=== ²»¿É¼û¶Ô °şÂä/ÁÑÎÆ | seen=['½¡¿µ', '¶Ï³İ', 'Ä¥Ëğ'] (n_seen=1720) ===
+  [seed 42] training...
+    [train] epoch  10/50  reg=0.0063
+    [train] epoch  20/50  reg=0.0024
+    [train] epoch  30/50  reg=0.0007
+    [train] epoch  40/50  reg=0.0005
+    [train] epoch  50/50  reg=0.0003
+  [seed 49] training...
+    [train] epoch  10/50  reg=0.0048
+    [train] epoch  20/50  reg=0.0017
+    [train] epoch  30/50  reg=0.0010
+    [train] epoch  40/50  reg=0.0005
+    [train] epoch  50/50  reg=0.0003
+  [seed 56] training...
+    [train] epoch  10/50  reg=0.0050
+    [train] epoch  20/50  reg=0.0012
+    [train] epoch  30/50  reg=0.0008
+    [train] epoch  40/50  reg=0.0004
+    [train] epoch  50/50  reg=0.0003
+  [°şÂä/ÁÑÎÆ] ÊôĞÔÓàÏÒ=-0.653  unseen ×¼È·ÂÊ=63.10% (n=1737, seeds=3)
+
+=== ²»¿É¼û¶Ô °şÂä/¶Ï³İ | seen=['½¡¿µ', 'Ä¥Ëğ', 'ÁÑÎÆ'] (n_seen=2017) ===
+  [seed 42] training...
+    [train] epoch  10/50  reg=0.0036
+    [train] epoch  20/50  reg=0.0012
+    [train] epoch  30/50  reg=0.0006
+    [train] epoch  40/50  reg=0.0003
+    [train] epoch  50/50  reg=0.0002
+  [seed 49] training...
+    [train] epoch  10/50  reg=0.0039
+    [train] epoch  20/50  reg=0.0013
+    [train] epoch  30/50  reg=0.0006
+    [train] epoch  40/50  reg=0.0004
+    [train] epoch  50/50  reg=0.0002
+  [seed 56] training...
+    [train] epoch  10/50  reg=0.0032
+    [train] epoch  20/50  reg=0.0014
+    [train] epoch  30/50  reg=0.0005
+    [train] epoch  40/50  reg=0.0003
+    [train] epoch  50/50  reg=0.0002
+  [°şÂä/¶Ï³İ] ÊôĞÔÓàÏÒ=-0.462  unseen ×¼È·ÂÊ=43.61% (n=1440, seeds=3)
+
+| ²»¿É¼û¶Ô | ÊôĞÔÓàÏÒ | unseen ×¼È·ÂÊ |
+|----------|----------|---------------|
+| ½¡¿µ/ÁÑÎÆ | -0.301 | 27.91% |
+| °şÂä/Ä¥Ëğ | -0.174 | 44.08% |
+| ¶Ï³İ/Ä¥Ëğ | -0.411 | 71.91% |
+| °şÂä/ÁÑÎÆ | -0.653 | 63.10% |
+| °şÂä/¶Ï³İ | -0.462 | 43.61% |
+
+¾ùÖµ×¼È·ÂÊ£¨Àà¾ùÖµ»Ø¹é£© = 50.12%
+
+[ÒÑÁí´æ] results_classmean_ablation_smallcnn.json

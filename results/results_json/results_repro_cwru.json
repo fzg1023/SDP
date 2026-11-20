@@ -1,0 +1,66 @@
+{
+  "note": "ESAG 真零样本修复 CWRU 版（论文自带 7/3：seen 7 类 / unseen 3 重度）",
+  "dataset": "CWRU",
+  "seeds": [
+    42,
+    49,
+    56
+  ],
+  "epochs": 50,
+  "lr": 0.0005,
+  "wd": 0.001,
+  "drop_path": 0.3,
+  "backbone": "swin_lite",
+  "attr_holdout": 0.2,
+  "annot_seed": 42,
+  "attr_dim": 21,
+  "seen": [
+    "Normal",
+    "IR007",
+    "IR014",
+    "B007",
+    "B014",
+    "OR007",
+    "OR014"
+  ],
+  "unseen": [
+    "IR021",
+    "B021",
+    "OR021"
+  ],
+  "three_way_accuracy": 0.8594,
+  "three_way_ceiling": 0.9293,
+  "three_way_recall": {
+    "IR021": 0.75,
+    "B021": 0.9416,
+    "OR021": 0.8862
+  },
+  "three_way_recall_ceiling": {
+    "IR021": 0.9255,
+    "B021": 0.9549,
+    "OR021": 0.9074
+  },
+  "pairwise": [
+    {
+      "pair": "IR021/B021",
+      "attr_cos": -0.567,
+      "unseen_accuracy": 0.9708,
+      "ceiling": 0.9774,
+      "n": 753
+    },
+    {
+      "pair": "IR021/OR021",
+      "attr_cos": 0.851,
+      "unseen_accuracy": 0.8183,
+      "ceiling": 0.9164,
+      "n": 754
+    },
+    {
+      "pair": "B021/OR021",
+      "attr_cos": -0.361,
+      "unseen_accuracy": 0.9735,
+      "ceiling": 0.9801,
+      "n": 755
+    }
+  ]
+}

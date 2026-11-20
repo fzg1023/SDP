@@ -1,0 +1,108 @@
+{
+  "note": "CWRU 留故障部位更严格对照（不改模型；chance=33.3%）",
+  "seeds": [
+    42,
+    49,
+    56
+  ],
+  "epochs": 50,
+  "backbone": "small",
+  "holds": [
+    "IR",
+    "B",
+    "OR"
+  ],
+  "rows": [
+    {
+      "hold": "IR",
+      "unseen": [
+        "IR007",
+        "IR014",
+        "IR021"
+      ],
+      "seen": [
+        "Normal",
+        "B007",
+        "B014",
+        "B021",
+        "OR007",
+        "OR014",
+        "OR021"
+      ],
+      "three_way_mean": 0.8936,
+      "three_way_std": 0.0176,
+      "three_way_ceiling": 1.0,
+      "three_way_per_seed": [
+        0.8998,
+        0.9113,
+        0.8697
+      ],
+      "recall_mean": {
+        "IR007": 1.0,
+        "IR014": 0.697,
+        "IR021": 0.9823
+      }
+    },
+    {
+      "hold": "B",
+      "unseen": [
+        "B007",
+        "B014",
+        "B021"
+      ],
+      "seen": [
+        "Normal",
+        "IR007",
+        "IR014",
+        "IR021",
+        "OR007",
+        "OR014",
+        "OR021"
+      ],
+      "three_way_mean": 0.6983,
+      "three_way_std": 0.0402,
+      "three_way_ceiling": 0.9026,
+      "three_way_per_seed": [
+        0.6873,
+        0.6554,
+        0.752
+      ],
+      "recall_mean": {
+        "B007": 0.6578,
+        "B014": 0.5261,
+        "B021": 0.9107
+      }
+    },
+    {
+      "hold": "OR",
+      "unseen": [
+        "OR007",
+        "OR014",
+        "OR021"
+      ],
+      "seen": [
+        "Normal",
+        "IR007",
+        "IR014",
+        "IR021",
+        "B007",
+        "B014",
+        "B021"
+      ],
+      "three_way_mean": 0.9929,
+      "three_way_std": 0.0062,
+      "three_way_ceiling": 0.9982,
+      "three_way_per_seed": [
+        0.9938,
+        1.0,
+        0.985
+      ],
+      "recall_mean": {
+        "OR007": 1.0,
+        "OR014": 1.0,
+        "OR021": 0.9788
+      }
+    }
+  ],
+  "mean_over_locations": 0.8616
+}

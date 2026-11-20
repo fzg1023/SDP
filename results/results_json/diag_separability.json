@@ -1,0 +1,40 @@
+{
+  "note": "数据可分性天花板(PCA64+LR 5折CV) vs 属性几何",
+  "rows": [
+    {
+      "pair": "健康/裂纹",
+      "raw_dot": 0.585,
+      "cos_attr": 0.509,
+      "data_ceiling": 0.9963,
+      "n": 1621
+    },
+    {
+      "pair": "剥落/磨损",
+      "raw_dot": 0.725,
+      "cos_attr": 0.235,
+      "data_ceiling": 0.9126,
+      "n": 1900
+    },
+    {
+      "pair": "断齿/磨损",
+      "raw_dot": 0.758,
+      "cos_attr": 0.204,
+      "data_ceiling": 0.9694,
+      "n": 1700
+    },
+    {
+      "pair": "剥落/裂纹",
+      "raw_dot": 1.595,
+      "cos_attr": 0.499,
+      "data_ceiling": 0.9323,
+      "n": 2171
+    },
+    {
+      "pair": "剥落/断齿",
+      "raw_dot": 2.015,
+      "cos_attr": 0.525,
+      "data_ceiling": 0.9611,
+      "n": 1800
+    }
+  ]
+}

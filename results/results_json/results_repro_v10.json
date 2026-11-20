@@ -1,0 +1,76 @@
+{
+  "note": "ESAG 真零样本修复 v10（图像域物理特征 + 逐样本回归 + 语义点积 + 严格 inductive）",
+  "seeds": [
+    42,
+    49,
+    56
+  ],
+  "epochs": 50,
+  "lr": 0.0005,
+  "wd": 0.001,
+  "drop_path": 0.3,
+  "ce_weight": 0.0,
+  "loss": "mse",
+  "backbone": "swin_lite",
+  "attr_holdout": 0.2,
+  "annot_seed": 42,
+  "attr_dim": 21,
+  "rows": [
+    {
+      "pair": "健康/裂纹",
+      "seen": [
+        "剥落",
+        "断齿",
+        "磨损"
+      ],
+      "attr_cos": -0.301,
+      "unseen_accuracy": 0.5944,
+      "n": 1297
+    },
+    {
+      "pair": "剥落/磨损",
+      "seen": [
+        "健康",
+        "断齿",
+        "裂纹"
+      ],
+      "attr_cos": -0.174,
+      "unseen_accuracy": 0.5868,
+      "n": 1520
+    },
+    {
+      "pair": "断齿/磨损",
+      "seen": [
+        "健康",
+        "剥落",
+        "裂纹"
+      ],
+      "attr_cos": -0.411,
+      "unseen_accuracy": 0.7912,
+      "n": 1360
+    },
+    {
+      "pair": "剥落/裂纹",
+      "seen": [
+        "健康",
+        "断齿",
+        "磨损"
+      ],
+      "attr_cos": -0.653,
+      "unseen_accuracy": 0.5866,
+      "n": 1737
+    },
+    {
+      "pair": "剥落/断齿",
+      "seen": [
+        "健康",
+        "磨损",
+        "裂纹"
+      ],
+      "attr_cos": -0.462,
+      "unseen_accuracy": 0.6979,
+      "n": 1440
+    }
+  ],
+  "mean_accuracy": 0.6514
+}

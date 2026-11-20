@@ -1,0 +1,161 @@
+{
+  "note": "骨干消融：唯一变量 = backbone（21维图像域特征+逐样本MSE+语义点积+严格inductive）",
+  "seeds": [
+    42,
+    49,
+    56
+  ],
+  "epochs": 50,
+  "drop_path": 0.3,
+  "attr_holdout": 0.2,
+  "annot_seed": 42,
+  "attr_dim": 21,
+  "backbones": [
+    "swin_lite",
+    "swin",
+    "medium",
+    "small"
+  ],
+  "summary": {
+    "swin_lite": {
+      "mean_accuracy": 0.6514,
+      "rows": [
+        {
+          "pair": "健康/裂纹",
+          "attr_cos": -0.301,
+          "unseen_accuracy": 0.5944,
+          "n": 1297
+        },
+        {
+          "pair": "剥落/磨损",
+          "attr_cos": -0.174,
+          "unseen_accuracy": 0.5868,
+          "n": 1520
+        },
+        {
+          "pair": "断齿/磨损",
+          "attr_cos": -0.411,
+          "unseen_accuracy": 0.7912,
+          "n": 1360
+        },
+        {
+          "pair": "剥落/裂纹",
+          "attr_cos": -0.653,
+          "unseen_accuracy": 0.5866,
+          "n": 1737
+        },
+        {
+          "pair": "剥落/断齿",
+          "attr_cos": -0.462,
+          "unseen_accuracy": 0.6979,
+          "n": 1440
+        }
+      ]
+    },
+    "swin": {
+      "mean_accuracy": 0.6535,
+      "rows": [
+        {
+          "pair": "健康/裂纹",
+          "attr_cos": -0.301,
+          "unseen_accuracy": 0.5975,
+          "n": 1297
+        },
+        {
+          "pair": "剥落/磨损",
+          "attr_cos": -0.174,
+          "unseen_accuracy": 0.6039,
+          "n": 1520
+        },
+        {
+          "pair": "断齿/磨损",
+          "attr_cos": -0.411,
+          "unseen_accuracy": 0.7816,
+          "n": 1360
+        },
+        {
+          "pair": "剥落/裂纹",
+          "attr_cos": -0.653,
+          "unseen_accuracy": 0.5826,
+          "n": 1737
+        },
+        {
+          "pair": "剥落/断齿",
+          "attr_cos": -0.462,
+          "unseen_accuracy": 0.7021,
+          "n": 1440
+        }
+      ]
+    },
+    "medium": {
+      "mean_accuracy": 0.6587,
+      "rows": [
+        {
+          "pair": "健康/裂纹",
+          "attr_cos": -0.301,
+          "unseen_accuracy": 0.6083,
+          "n": 1297
+        },
+        {
+          "pair": "剥落/磨损",
+          "attr_cos": -0.174,
+          "unseen_accuracy": 0.5822,
+          "n": 1520
+        },
+        {
+          "pair": "断齿/磨损",
+          "attr_cos": -0.411,
+          "unseen_accuracy": 0.8257,
+          "n": 1360
+        },
+        {
+          "pair": "剥落/裂纹",
+          "attr_cos": -0.653,
+          "unseen_accuracy": 0.5757,
+          "n": 1737
+        },
+        {
+          "pair": "剥落/断齿",
+          "attr_cos": -0.462,
+          "unseen_accuracy": 0.7014,
+          "n": 1440
+        }
+      ]
+    },
+    "small": {
+      "mean_accuracy": 0.6778,
+      "rows": [
+        {
+          "pair": "健康/裂纹",
+          "attr_cos": -0.301,
+          "unseen_accuracy": 0.6276,
+          "n": 1297
+        },
+        {
+          "pair": "剥落/磨损",
+          "attr_cos": -0.174,
+          "unseen_accuracy": 0.6204,
+          "n": 1520
+        },
+        {
+          "pair": "断齿/磨损",
+          "attr_cos": -0.411,
+          "unseen_accuracy": 0.8243,
+          "n": 1360
+        },
+        {
+          "pair": "剥落/裂纹",
+          "attr_cos": -0.653,
+          "unseen_accuracy": 0.6172,
+          "n": 1737
+        },
+        {
+          "pair": "剥落/断齿",
+          "attr_cos": -0.462,
+          "unseen_accuracy": 0.6993,
+          "n": 1440
+        }
+      ]
+    }
+  }
+}

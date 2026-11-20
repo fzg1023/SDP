@@ -1,0 +1,42 @@
+[data] n=5886 classes=['Normal', 'IR007', 'IR014', 'IR021', 'B007', 'B014', 'B021', 'OR007', 'OR014', 'OR021']
+[data] seen=['Normal', 'IR007', 'IR014', 'B007', 'B014', 'OR007', 'OR014'] unseen=['IR021', 'B021', 'OR021']
+[attr] 10 类原型来自 1176 个标定样本
+[prep] precomputing CWT images for ZSL split...
+[prep] zsl images=torch.Size([4710, 2, 64, 64])
+[seed 42] training on 3579 seen samples...
+D:\Anaconda\envs\esag\lib\site-packages\torch\optim\lr_scheduler.py:198: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+    [train] epoch  10/50  reg=0.0577 ce=0.0000
+    [train] epoch  20/50  reg=0.0400 ce=0.0000
+    [train] epoch  30/50  reg=0.0203 ce=0.0000
+    [train] epoch  40/50  reg=0.0124 ce=0.0000
+    [train] epoch  50/50  reg=0.0106 ce=0.0000
+[seed 49] training on 3579 seen samples...
+    [train] epoch  10/50  reg=0.0598 ce=0.0000
+    [train] epoch  20/50  reg=0.0383 ce=0.0000
+    [train] epoch  30/50  reg=0.0211 ce=0.0000
+    [train] epoch  40/50  reg=0.0128 ce=0.0000
+    [train] epoch  50/50  reg=0.0104 ce=0.0000
+[seed 56] training on 3579 seen samples...
+    [train] epoch  10/50  reg=0.0660 ce=0.0000
+    [train] epoch  20/50  reg=0.0394 ce=0.0000
+    [train] epoch  30/50  reg=0.0183 ce=0.0000
+    [train] epoch  40/50  reg=0.0127 ce=0.0000
+    [train] epoch  50/50  reg=0.0100 ce=0.0000
+
+=== 3-way unseen（IR021/B021/OR021）===
+  学习模型 3-way 准确率 = 86.91% (n=1131)
+  直接匹配上界           = 92.93%
+    IR021  recall: model=73.14%  ceiling=92.55%
+    B021   recall: model=96.02%  ceiling=95.49%
+    OR021  recall: model=91.53%  ceiling=90.74%
+
+| unseen 对 | 属性余弦 | 模型准确率 | 直接匹配上界 |
+|-----------|----------|-----------|--------------|
+| IR021/B021 | -0.567 | 98.01% | 97.74% |
+| IR021/OR021 | 0.851 | 82.36% | 91.64% |
+| B021/OR021 | -0.361 | 99.60% | 98.01% |
+
+[已另存] results_strict_zsl_cwru_smallcnn.json
+
+=== CWRU 3-way unseen 准确率 = 86.91%（上界 92.93%）===

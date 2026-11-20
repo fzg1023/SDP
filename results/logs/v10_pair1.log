@@ -1,0 +1,23 @@
+[data] n=4321 classes=['健康', '剥落', '断齿', '磨损', '裂纹']
+[attr] image-domain attribute matrix from 864 annot samples
+[prep] precomputing CWT images for ZSL split...
+[prep] zsl images=torch.Size([3457, 2, 64, 64])
+
+=== 不可见对 健康/裂纹 | seen=['剥落', '断齿', '磨损'] (n_seen=2160) ===
+  [seed 42] training...
+D:\Anaconda\envs\esag\lib\site-packages\torch\optim\lr_scheduler.py:198: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+    [train] epoch  10/50  reg=0.0556 ce=0.0000
+    [train] epoch  20/50  reg=0.0369 ce=0.0000
+    [train] epoch  30/50  reg=0.0271 ce=0.0000
+    [train] epoch  40/50  reg=0.0203 ce=0.0000
+    [train] epoch  50/50  reg=0.0171 ce=0.0000
+  [健康/裂纹] 属性余弦=-0.301  unseen 准确率=59.44% (n=1297, seeds=1)
+
+| 不可见对 | 属性余弦 | unseen 准确率 |
+|----------|----------|---------------|
+| 健康/裂纹 | -0.301 | 59.44% |
+
+均值准确率 = 59.44%
+
+[已另存] D:\EsAg\esag_fix\results_strict_zsl_v10.json

@@ -1,0 +1,116 @@
+{
+  "note": "CWRU 留故障部位更严格对照（不改模型；chance=33.3%）",
+  "seeds": [
+    42,
+    49,
+    56,
+    63,
+    70
+  ],
+  "epochs": 50,
+  "backbone": "small",
+  "holds": [
+    "IR",
+    "B",
+    "OR"
+  ],
+  "rows": [
+    {
+      "hold": "IR",
+      "unseen": [
+        "IR007",
+        "IR014",
+        "IR021"
+      ],
+      "seen": [
+        "Normal",
+        "B007",
+        "B014",
+        "B021",
+        "OR007",
+        "OR014",
+        "OR021"
+      ],
+      "three_way_mean": 0.8691,
+      "three_way_std": 0.0341,
+      "three_way_ceiling": 1.0,
+      "three_way_per_seed": [
+        0.8998,
+        0.9113,
+        0.8697,
+        0.8183,
+        0.8466
+      ],
+      "recall_mean": {
+        "IR007": 1.0,
+        "IR014": 0.6385,
+        "IR021": 0.967
+      }
+    },
+    {
+      "hold": "B",
+      "unseen": [
+        "B007",
+        "B014",
+        "B021"
+      ],
+      "seen": [
+        "Normal",
+        "IR007",
+        "IR014",
+        "IR021",
+        "OR007",
+        "OR014",
+        "OR021"
+      ],
+      "three_way_mean": 0.6958,
+      "three_way_std": 0.0313,
+      "three_way_ceiling": 0.9026,
+      "three_way_per_seed": [
+        0.6873,
+        0.6554,
+        0.752,
+        0.6918,
+        0.6926
+      ],
+      "recall_mean": {
+        "B007": 0.6459,
+        "B014": 0.5257,
+        "B021": 0.9156
+      }
+    },
+    {
+      "hold": "OR",
+      "unseen": [
+        "OR007",
+        "OR014",
+        "OR021"
+      ],
+      "seen": [
+        "Normal",
+        "IR007",
+        "IR014",
+        "IR021",
+        "B007",
+        "B014",
+        "B021"
+      ],
+      "three_way_mean": 0.9938,
+      "three_way_std": 0.0051,
+      "three_way_ceiling": 0.9982,
+      "three_way_per_seed": [
+        0.9938,
+        1.0,
+        0.985,
+        0.9929,
+        0.9973
+      ],
+      "recall_mean": {
+        "OR007": 1.0,
+        "OR014": 1.0,
+        "OR021": 0.9815
+      }
+    }
+  ],
+  "mean_over_locations": 0.8529
+}

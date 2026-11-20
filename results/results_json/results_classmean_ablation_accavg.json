@@ -1,0 +1,49 @@
+{
+  "note": "ESAG 类均值回归消融（干净 3 seed × 5 对，回归目标=类均值原型）",
+  "seeds": [
+    42,
+    49,
+    56
+  ],
+  "epochs": 50,
+  "lr": 0.0005,
+  "wd": 0.001,
+  "drop_path": 0.3,
+  "backbone": "small",
+  "attr_holdout": 0.2,
+  "annot_seed": 42,
+  "attr_dim": 21,
+  "rows": [
+    {
+      "pair": "健康/裂纹",
+      "attr_cos": -0.301,
+      "unseen_accuracy": 0.2827,
+      "n": 1297
+    },
+    {
+      "pair": "剥落/磨损",
+      "attr_cos": -0.174,
+      "unseen_accuracy": 0.4476,
+      "n": 1520
+    },
+    {
+      "pair": "断齿/磨损",
+      "attr_cos": -0.411,
+      "unseen_accuracy": 0.7137,
+      "n": 1360
+    },
+    {
+      "pair": "剥落/裂纹",
+      "attr_cos": -0.653,
+      "unseen_accuracy": 0.6049,
+      "n": 1737
+    },
+    {
+      "pair": "剥落/断齿",
+      "attr_cos": -0.462,
+      "unseen_accuracy": 0.4296,
+      "n": 1440
+    }
+  ],
+  "mean_accuracy": 0.4957
+}

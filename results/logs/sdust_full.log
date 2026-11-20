@@ -1,0 +1,241 @@
+[device] cuda
+[load] NC     files= 48 windows= 6912 (25.4s)
+[load] IF0.2  files= 37 windows= 5328 (22.3s)
+[load] IF0.4  files= 37 windows= 5328 (20.7s)
+[load] IF0.6  files= 37 windows= 5328 (45.4s)
+[load] OF0.2  files= 37 windows= 5328 (15.9s)
+[load] OF0.4  files= 37 windows= 5328 (16.3s)
+[load] OF0.6  files= 37 windows= 5328 (34.9s)
+[load] RF0.2  files= 37 windows= 5328 (24.5s)
+[load] RF0.4  files= 37 windows= 5328 (15.9s)
+[load] RF0.6  files= 37 windows= 5328 (25.1s)
+[data] n=54864 classes=['NC', 'IF0.2', 'IF0.4', 'IF0.6', 'OF0.2', 'OF0.4', 'OF0.6', 'RF0.2', 'RF0.4', 'RF0.6'] (253.4s)
+[data] seen=['NC', 'IF0.2', 'IF0.4', 'OF0.2', 'OF0.4', 'RF0.2', 'RF0.4'] unseen=['IF0.6', 'OF0.6', 'RF0.6']
+[feat] computing image-domain physical features (CWT)...
+    [feat] 2000/54864  (31s)
+    [feat] 4000/54864  (56s)
+    [feat] 6000/54864  (82s)
+    [feat] 8000/54864  (108s)
+    [feat] 10000/54864  (133s)
+    [feat] 12000/54864  (158s)
+    [feat] 14000/54864  (182s)
+    [feat] 16000/54864  (208s)
+    [feat] 18000/54864  (236s)
+    [feat] 20000/54864  (263s)
+    [feat] 22000/54864  (288s)
+    [feat] 24000/54864  (313s)
+    [feat] 26000/54864  (338s)
+    [feat] 28000/54864  (364s)
+    [feat] 30000/54864  (389s)
+    [feat] 32000/54864  (414s)
+    [feat] 34000/54864  (439s)
+    [feat] 36000/54864  (464s)
+    [feat] 38000/54864  (488s)
+    [feat] 40000/54864  (513s)
+    [feat] 42000/54864  (538s)
+    [feat] 44000/54864  (562s)
+    [feat] 46000/54864  (587s)
+    [feat] 48000/54864  (612s)
+    [feat] 50000/54864  (637s)
+    [feat] 52000/54864  (662s)
+    [feat] 54000/54864  (687s)
+    [feat] 54864/54864  (698s)
+[feat] done (54864, 21) (697.9s)
+[attr] 10 类原型来自 10976 个标定样本
+[prep] precomputing CWT images for 43888 ZSL samples...
+    [prep] 2000/43888  (26s)
+    [prep] 4000/43888  (51s)
+    [prep] 6000/43888  (75s)
+    [prep] 8000/43888  (100s)
+    [prep] 10000/43888  (124s)
+    [prep] 12000/43888  (150s)
+    [prep] 14000/43888  (175s)
+    [prep] 16000/43888  (200s)
+    [prep] 18000/43888  (224s)
+    [prep] 20000/43888  (249s)
+    [prep] 22000/43888  (273s)
+    [prep] 24000/43888  (298s)
+    [prep] 26000/43888  (322s)
+    [prep] 28000/43888  (347s)
+    [prep] 30000/43888  (372s)
+    [prep] 32000/43888  (397s)
+    [prep] 34000/43888  (422s)
+    [prep] 36000/43888  (448s)
+    [prep] 38000/43888  (473s)
+    [prep] 40000/43888  (498s)
+    [prep] 42000/43888  (524s)
+    [prep] 43888/43888  (552s)
+[prep] zsl images=(43888, 2, 64, 64) (556.4s)
+[train] 31102 seen samples, 50 epochs x 3 seeds, backbone=small
+[seed 42] training...
+    [train] epoch   1/50  mse=0.1290  lr=1.40e-04
+    [train] epoch   2/50  mse=0.0789  lr=2.30e-04
+    [train] epoch   3/50  mse=0.0680  lr=3.20e-04
+    [train] epoch   4/50  mse=0.0616  lr=4.10e-04
+D:\Anaconda\envs\esag\lib\site-packages\torch\optim\lr_scheduler.py:198: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+    [train] epoch   5/50  mse=0.0576  lr=5.00e-04
+    [train] epoch   6/50  mse=0.0548  lr=4.99e-04
+    [train] epoch   7/50  mse=0.0505  lr=4.98e-04
+    [train] epoch   8/50  mse=0.0462  lr=4.95e-04
+    [train] epoch   9/50  mse=0.0428  lr=4.90e-04
+    [train] epoch  10/50  mse=0.0409  lr=4.85e-04
+    [train] epoch  11/50  mse=0.0399  lr=4.78e-04
+    [train] epoch  12/50  mse=0.0388  lr=4.71e-04
+    [train] epoch  13/50  mse=0.0363  lr=4.62e-04
+    [train] epoch  14/50  mse=0.0346  lr=4.52e-04
+    [train] epoch  15/50  mse=0.0328  lr=4.42e-04
+    [train] epoch  16/50  mse=0.0321  lr=4.30e-04
+    [train] epoch  17/50  mse=0.0303  lr=4.17e-04
+    [train] epoch  18/50  mse=0.0299  lr=4.04e-04
+    [train] epoch  19/50  mse=0.0277  lr=3.90e-04
+    [train] epoch  20/50  mse=0.0277  lr=3.75e-04
+    [train] epoch  21/50  mse=0.0269  lr=3.60e-04
+    [train] epoch  22/50  mse=0.0256  lr=3.44e-04
+    [train] epoch  23/50  mse=0.0251  lr=3.28e-04
+    [train] epoch  24/50  mse=0.0247  lr=3.11e-04
+    [train] epoch  25/50  mse=0.0233  lr=2.94e-04
+    [train] epoch  26/50  mse=0.0230  lr=2.77e-04
+    [train] epoch  27/50  mse=0.0223  lr=2.59e-04
+    [train] epoch  28/50  mse=0.0218  lr=2.42e-04
+    [train] epoch  29/50  mse=0.0212  lr=2.24e-04
+    [train] epoch  30/50  mse=0.0202  lr=2.07e-04
+    [train] epoch  31/50  mse=0.0199  lr=1.90e-04
+    [train] epoch  32/50  mse=0.0189  lr=1.73e-04
+    [train] epoch  33/50  mse=0.0184  lr=1.57e-04
+    [train] epoch  34/50  mse=0.0181  lr=1.41e-04
+    [train] epoch  35/50  mse=0.0174  lr=1.26e-04
+    [train] epoch  36/50  mse=0.0170  lr=1.11e-04
+    [train] epoch  37/50  mse=0.0166  lr=9.69e-05
+    [train] epoch  38/50  mse=0.0162  lr=8.36e-05
+    [train] epoch  39/50  mse=0.0156  lr=7.10e-05
+    [train] epoch  40/50  mse=0.0154  lr=5.94e-05
+    [train] epoch  41/50  mse=0.0151  lr=4.87e-05
+    [train] epoch  42/50  mse=0.0148  lr=3.89e-05
+    [train] epoch  43/50  mse=0.0145  lr=3.02e-05
+    [train] epoch  44/50  mse=0.0143  lr=2.26e-05
+    [train] epoch  45/50  mse=0.0141  lr=1.60e-05
+    [train] epoch  46/50  mse=0.0140  lr=1.07e-05
+    [train] epoch  47/50  mse=0.0139  lr=6.45e-06
+    [train] epoch  48/50  mse=0.0137  lr=3.43e-06
+    [train] epoch  49/50  mse=0.0137  lr=1.61e-06
+    [train] epoch  50/50  mse=0.0135  lr=1.00e-06
+[seed 49] training...
+    [train] epoch   1/50  mse=0.1318  lr=1.40e-04
+    [train] epoch   2/50  mse=0.0755  lr=2.30e-04
+    [train] epoch   3/50  mse=0.0709  lr=3.20e-04
+    [train] epoch   4/50  mse=0.0617  lr=4.10e-04
+    [train] epoch   5/50  mse=0.0585  lr=5.00e-04
+    [train] epoch   6/50  mse=0.0558  lr=4.99e-04
+    [train] epoch   7/50  mse=0.0507  lr=4.98e-04
+    [train] epoch   8/50  mse=0.0480  lr=4.95e-04
+    [train] epoch   9/50  mse=0.0450  lr=4.90e-04
+    [train] epoch  10/50  mse=0.0427  lr=4.85e-04
+    [train] epoch  11/50  mse=0.0398  lr=4.78e-04
+    [train] epoch  12/50  mse=0.0376  lr=4.71e-04
+    [train] epoch  13/50  mse=0.0349  lr=4.62e-04
+    [train] epoch  14/50  mse=0.0360  lr=4.52e-04
+    [train] epoch  15/50  mse=0.0336  lr=4.42e-04
+    [train] epoch  16/50  mse=0.0323  lr=4.30e-04
+    [train] epoch  17/50  mse=0.0313  lr=4.17e-04
+    [train] epoch  18/50  mse=0.0288  lr=4.04e-04
+    [train] epoch  19/50  mse=0.0278  lr=3.90e-04
+    [train] epoch  20/50  mse=0.0281  lr=3.75e-04
+    [train] epoch  21/50  mse=0.0266  lr=3.60e-04
+    [train] epoch  22/50  mse=0.0263  lr=3.44e-04
+    [train] epoch  23/50  mse=0.0253  lr=3.28e-04
+    [train] epoch  24/50  mse=0.0245  lr=3.11e-04
+    [train] epoch  25/50  mse=0.0237  lr=2.94e-04
+    [train] epoch  26/50  mse=0.0230  lr=2.77e-04
+    [train] epoch  27/50  mse=0.0222  lr=2.59e-04
+    [train] epoch  28/50  mse=0.0212  lr=2.42e-04
+    [train] epoch  29/50  mse=0.0210  lr=2.24e-04
+    [train] epoch  30/50  mse=0.0201  lr=2.07e-04
+    [train] epoch  31/50  mse=0.0199  lr=1.90e-04
+    [train] epoch  32/50  mse=0.0185  lr=1.73e-04
+    [train] epoch  33/50  mse=0.0183  lr=1.57e-04
+    [train] epoch  34/50  mse=0.0179  lr=1.41e-04
+    [train] epoch  35/50  mse=0.0173  lr=1.26e-04
+    [train] epoch  36/50  mse=0.0168  lr=1.11e-04
+    [train] epoch  37/50  mse=0.0164  lr=9.69e-05
+    [train] epoch  38/50  mse=0.0160  lr=8.36e-05
+    [train] epoch  39/50  mse=0.0160  lr=7.10e-05
+    [train] epoch  40/50  mse=0.0154  lr=5.94e-05
+    [train] epoch  41/50  mse=0.0151  lr=4.87e-05
+    [train] epoch  42/50  mse=0.0149  lr=3.89e-05
+    [train] epoch  43/50  mse=0.0146  lr=3.02e-05
+    [train] epoch  44/50  mse=0.0145  lr=2.26e-05
+    [train] epoch  45/50  mse=0.0142  lr=1.60e-05
+    [train] epoch  46/50  mse=0.0140  lr=1.07e-05
+    [train] epoch  47/50  mse=0.0138  lr=6.45e-06
+    [train] epoch  48/50  mse=0.0137  lr=3.43e-06
+    [train] epoch  49/50  mse=0.0137  lr=1.61e-06
+    [train] epoch  50/50  mse=0.0136  lr=1.00e-06
+[seed 56] training...
+    [train] epoch   1/50  mse=0.1279  lr=1.40e-04
+    [train] epoch   2/50  mse=0.0776  lr=2.30e-04
+    [train] epoch   3/50  mse=0.0678  lr=3.20e-04
+    [train] epoch   4/50  mse=0.0605  lr=4.10e-04
+    [train] epoch   5/50  mse=0.0577  lr=5.00e-04
+    [train] epoch   6/50  mse=0.0549  lr=4.99e-04
+    [train] epoch   7/50  mse=0.0494  lr=4.98e-04
+    [train] epoch   8/50  mse=0.0458  lr=4.95e-04
+    [train] epoch   9/50  mse=0.0436  lr=4.90e-04
+    [train] epoch  10/50  mse=0.0405  lr=4.85e-04
+    [train] epoch  11/50  mse=0.0403  lr=4.78e-04
+    [train] epoch  12/50  mse=0.0383  lr=4.71e-04
+    [train] epoch  13/50  mse=0.0359  lr=4.62e-04
+    [train] epoch  14/50  mse=0.0338  lr=4.52e-04
+    [train] epoch  15/50  mse=0.0329  lr=4.42e-04
+    [train] epoch  16/50  mse=0.0314  lr=4.30e-04
+    [train] epoch  17/50  mse=0.0302  lr=4.17e-04
+    [train] epoch  18/50  mse=0.0299  lr=4.04e-04
+    [train] epoch  19/50  mse=0.0285  lr=3.90e-04
+    [train] epoch  20/50  mse=0.0287  lr=3.75e-04
+    [train] epoch  21/50  mse=0.0263  lr=3.60e-04
+    [train] epoch  22/50  mse=0.0257  lr=3.44e-04
+    [train] epoch  23/50  mse=0.0255  lr=3.28e-04
+    [train] epoch  24/50  mse=0.0246  lr=3.11e-04
+    [train] epoch  25/50  mse=0.0237  lr=2.94e-04
+    [train] epoch  26/50  mse=0.0225  lr=2.77e-04
+    [train] epoch  27/50  mse=0.0221  lr=2.59e-04
+    [train] epoch  28/50  mse=0.0217  lr=2.42e-04
+    [train] epoch  29/50  mse=0.0209  lr=2.24e-04
+    [train] epoch  30/50  mse=0.0201  lr=2.07e-04
+    [train] epoch  31/50  mse=0.0193  lr=1.90e-04
+    [train] epoch  32/50  mse=0.0188  lr=1.73e-04
+    [train] epoch  33/50  mse=0.0185  lr=1.57e-04
+    [train] epoch  34/50  mse=0.0180  lr=1.41e-04
+    [train] epoch  35/50  mse=0.0175  lr=1.26e-04
+    [train] epoch  36/50  mse=0.0169  lr=1.11e-04
+    [train] epoch  37/50  mse=0.0169  lr=9.69e-05
+    [train] epoch  38/50  mse=0.0161  lr=8.36e-05
+    [train] epoch  39/50  mse=0.0158  lr=7.10e-05
+    [train] epoch  40/50  mse=0.0155  lr=5.94e-05
+    [train] epoch  41/50  mse=0.0152  lr=4.87e-05
+    [train] epoch  42/50  mse=0.0148  lr=3.89e-05
+    [train] epoch  43/50  mse=0.0146  lr=3.02e-05
+    [train] epoch  44/50  mse=0.0144  lr=2.26e-05
+    [train] epoch  45/50  mse=0.0140  lr=1.60e-05
+    [train] epoch  46/50  mse=0.0139  lr=1.07e-05
+    [train] epoch  47/50  mse=0.0138  lr=6.45e-06
+    [train] epoch  48/50  mse=0.0137  lr=3.43e-06
+    [train] epoch  49/50  mse=0.0137  lr=1.61e-06
+    [train] epoch  50/50  mse=0.0136  lr=1.00e-06
+
+=== 3-way unseen（IF0.6 / OF0.6 / RF0.6）===
+  学习模型 3-way 准确率 = 58.25% (n=12786)
+  直接匹配上界           = 59.41%
+    IF0.6  recall: model=36.95%  ceiling=50.92%
+    OF0.6  recall: model=57.48%  ceiling=57.88%
+    RF0.6  recall: model=80.31%  ceiling=69.43%
+
+| unseen 对 | 属性余弦 | 模型准确率 | 直接匹配上界 |
+|-----------|----------|-----------|--------------|
+| IF0.6/OF0.6 | 0.586 | 72.77% | 72.43% |
+| IF0.6/RF0.6 | -0.662 | 65.87% | 68.18% |
+| OF0.6/RF0.6 | -0.850 | 75.97% | 72.24% |
+
+[已另存] results_strict_zsl_sdust.json
+
+=== SDUST 3-way unseen 准确率 = 58.25%（上界 59.41%）===

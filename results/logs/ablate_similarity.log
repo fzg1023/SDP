@@ -1,0 +1,93 @@
+[data] n=4321 classes=['健康', '剥落', '断齿', '磨损', '裂纹']
+[prep] precomputing CWT images...
+[prep] zsl images=(3457, 2, 64, 64)
+D:\Anaconda\envs\esag\lib\site-packages\torch\optim\lr_scheduler.py:198: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+    [train] epoch  10/50  reg=0.0691 ce=0.0000
+    [train] epoch  20/50  reg=0.0387 ce=0.0000
+    [train] epoch  30/50  reg=0.0230 ce=0.0000
+    [train] epoch  40/50  reg=0.0151 ce=0.0000
+    [train] epoch  50/50  reg=0.0125 ce=0.0000
+    [train] epoch  10/50  reg=0.0712 ce=0.0000
+    [train] epoch  20/50  reg=0.0363 ce=0.0000
+    [train] epoch  30/50  reg=0.0238 ce=0.0000
+    [train] epoch  40/50  reg=0.0155 ce=0.0000
+    [train] epoch  50/50  reg=0.0118 ce=0.0000
+    [train] epoch  10/50  reg=0.0575 ce=0.0000
+    [train] epoch  20/50  reg=0.0439 ce=0.0000
+    [train] epoch  30/50  reg=0.0250 ce=0.0000
+    [train] epoch  40/50  reg=0.0148 ce=0.0000
+    [train] epoch  50/50  reg=0.0114 ce=0.0000
+  [健康/裂纹] cosine=62.48% raw_dot=62.37% euclidean=66.28% manhattan=64.35% 
+    [train] epoch  10/50  reg=0.0721 ce=0.0000
+    [train] epoch  20/50  reg=0.0420 ce=0.0000
+    [train] epoch  30/50  reg=0.0242 ce=0.0000
+    [train] epoch  40/50  reg=0.0159 ce=0.0000
+    [train] epoch  50/50  reg=0.0115 ce=0.0000
+    [train] epoch  10/50  reg=0.0743 ce=0.0000
+    [train] epoch  20/50  reg=0.0358 ce=0.0000
+    [train] epoch  30/50  reg=0.0245 ce=0.0000
+    [train] epoch  40/50  reg=0.0157 ce=0.0000
+    [train] epoch  50/50  reg=0.0122 ce=0.0000
+    [train] epoch  10/50  reg=0.0660 ce=0.0000
+    [train] epoch  20/50  reg=0.0413 ce=0.0000
+    [train] epoch  30/50  reg=0.0220 ce=0.0000
+    [train] epoch  40/50  reg=0.0141 ce=0.0000
+    [train] epoch  50/50  reg=0.0127 ce=0.0000
+  [剥落/磨损] cosine=61.60% raw_dot=61.73% euclidean=61.27% manhattan=62.50% 
+    [train] epoch  10/50  reg=0.0799 ce=0.0000
+    [train] epoch  20/50  reg=0.0450 ce=0.0000
+    [train] epoch  30/50  reg=0.0262 ce=0.0000
+    [train] epoch  40/50  reg=0.0155 ce=0.0000
+    [train] epoch  50/50  reg=0.0128 ce=0.0000
+    [train] epoch  10/50  reg=0.0823 ce=0.0000
+    [train] epoch  20/50  reg=0.0451 ce=0.0000
+    [train] epoch  30/50  reg=0.0249 ce=0.0000
+    [train] epoch  40/50  reg=0.0174 ce=0.0000
+    [train] epoch  50/50  reg=0.0123 ce=0.0000
+    [train] epoch  10/50  reg=0.0758 ce=0.0000
+    [train] epoch  20/50  reg=0.0428 ce=0.0000
+    [train] epoch  30/50  reg=0.0275 ce=0.0000
+    [train] epoch  40/50  reg=0.0157 ce=0.0000
+    [train] epoch  50/50  reg=0.0127 ce=0.0000
+  [断齿/磨损] cosine=82.55% raw_dot=82.57% euclidean=82.60% manhattan=80.25% 
+    [train] epoch  10/50  reg=0.0591 ce=0.0000
+    [train] epoch  20/50  reg=0.0387 ce=0.0000
+    [train] epoch  30/50  reg=0.0223 ce=0.0000
+    [train] epoch  40/50  reg=0.0167 ce=0.0000
+    [train] epoch  50/50  reg=0.0114 ce=0.0000
+    [train] epoch  10/50  reg=0.0569 ce=0.0000
+    [train] epoch  20/50  reg=0.0360 ce=0.0000
+    [train] epoch  30/50  reg=0.0215 ce=0.0000
+    [train] epoch  40/50  reg=0.0143 ce=0.0000
+    [train] epoch  50/50  reg=0.0116 ce=0.0000
+    [train] epoch  10/50  reg=0.0572 ce=0.0000
+    [train] epoch  20/50  reg=0.0380 ce=0.0000
+    [train] epoch  30/50  reg=0.0226 ce=0.0000
+    [train] epoch  40/50  reg=0.0137 ce=0.0000
+    [train] epoch  50/50  reg=0.0113 ce=0.0000
+  [剥落/裂纹] cosine=61.95% raw_dot=61.93% euclidean=64.25% manhattan=62.23% 
+    [train] epoch  10/50  reg=0.0648 ce=0.0000
+    [train] epoch  20/50  reg=0.0372 ce=0.0000
+    [train] epoch  30/50  reg=0.0272 ce=0.0000
+    [train] epoch  40/50  reg=0.0164 ce=0.0000
+    [train] epoch  50/50  reg=0.0125 ce=0.0000
+    [train] epoch  10/50  reg=0.0812 ce=0.0000
+    [train] epoch  20/50  reg=0.0386 ce=0.0000
+    [train] epoch  30/50  reg=0.0285 ce=0.0000
+    [train] epoch  40/50  reg=0.0158 ce=0.0000
+    [train] epoch  50/50  reg=0.0134 ce=0.0000
+    [train] epoch  10/50  reg=0.0645 ce=0.0000
+    [train] epoch  20/50  reg=0.0434 ce=0.0000
+    [train] epoch  30/50  reg=0.0234 ce=0.0000
+    [train] epoch  40/50  reg=0.0162 ce=0.0000
+    [train] epoch  50/50  reg=0.0129 ce=0.0000
+  [剥落/断齿] cosine=69.42% raw_dot=70.42% euclidean=71.32% manhattan=73.38% 
+
+=== 5 对平均（各度量）===
+  cosine: 67.60%
+  raw_dot: 67.80%
+  euclidean: 69.14%
+  manhattan: 68.54%
+
+[已另存] D:\EsAg\esag_fix\results_similarity_ablation.json

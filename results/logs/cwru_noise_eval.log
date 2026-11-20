@@ -1,0 +1,39 @@
+[data] n=5886
+[prep] precomputing CWT images...
+[prep] zsl images=(4710, 2, 64, 64)
+[seed 42] training...
+D:\Anaconda\envs\esag\lib\site-packages\torch\optim\lr_scheduler.py:198: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+[seed 42] clean 3-way=87.27%
+    [seed 42] SNR= 20dB 3-way=86.74%
+    [seed 42] SNR= 15dB 3-way=86.21%
+    [seed 42] SNR= 10dB 3-way=82.76%
+    [seed 42] SNR=  5dB 3-way=58.97%
+    [seed 42] SNR=  0dB 3-way=33.24%
+    [seed 42] SNR= -5dB 3-way=33.24%
+[seed 49] training...
+[seed 49] clean 3-way=88.24%
+    [seed 49] SNR= 20dB 3-way=87.80%
+    [seed 49] SNR= 15dB 3-way=87.80%
+    [seed 49] SNR= 10dB 3-way=87.27%
+    [seed 49] SNR=  5dB 3-way=64.28%
+    [seed 49] SNR=  0dB 3-way=33.24%
+    [seed 49] SNR= -5dB 3-way=33.24%
+[seed 56] training...
+[seed 56] clean 3-way=86.21%
+    [seed 56] SNR= 20dB 3-way=86.56%
+    [seed 56] SNR= 15dB 3-way=85.32%
+    [seed 56] SNR= 10dB 3-way=83.47%
+    [seed 56] SNR=  5dB 3-way=64.81%
+    [seed 56] SNR=  0dB 3-way=33.24%
+    [seed 56] SNR= -5dB 3-way=33.24%
+
+=== CWRU clean 3-way = 87.24% °¿ 0.83% ===
+  SNR  20dB: 87.03% °¿ 0.55%
+  SNR  15dB: 86.44% °¿ 1.02%
+  SNR  10dB: 84.50% °¿ 1.98%
+  SNR   5dB: 62.69% °¿ 2.63%
+  SNR   0dB: 33.24% °¿ 0.00%
+  SNR  -5dB: 33.24% °¿ 0.00%
+
+[“—¡Ì¥Ê] D:\EsAg\esag_fix\results_cwru_noise.json + cwru_predictions.npz

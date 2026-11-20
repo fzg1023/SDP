@@ -1,0 +1,42 @@
+[data] n=5886 seen=['Normal', 'IR007', 'IR014', 'B007', 'B014', 'OR007', 'OR014'] unseen=['IR021', 'B021', 'OR021']
+[prep] precomputing CWT images...
+[prep] zsl images=(4710, 2, 64, 64)
+D:\Anaconda\envs\esag\lib\site-packages\torch\optim\lr_scheduler.py:198: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+    [train] epoch  10/50  reg=0.0577 ce=0.0000
+    [train] epoch  20/50  reg=0.0400 ce=0.0000
+    [train] epoch  30/50  reg=0.0203 ce=0.0000
+    [train] epoch  40/50  reg=0.0124 ce=0.0000
+    [train] epoch  50/50  reg=0.0106 ce=0.0000
+[seed 42] 3-way=87.27%  rec={'IR021': 73.1, 'B021': 96.8, 'OR021': 91.8}
+    [train] epoch  10/50  reg=0.0598 ce=0.0000
+    [train] epoch  20/50  reg=0.0383 ce=0.0000
+    [train] epoch  30/50  reg=0.0211 ce=0.0000
+    [train] epoch  40/50  reg=0.0128 ce=0.0000
+    [train] epoch  50/50  reg=0.0104 ce=0.0000
+[seed 49] 3-way=88.24%  rec={'IR021': 71.8, 'B021': 96.3, 'OR021': 96.6}
+    [train] epoch  10/50  reg=0.0660 ce=0.0000
+    [train] epoch  20/50  reg=0.0394 ce=0.0000
+    [train] epoch  30/50  reg=0.0183 ce=0.0000
+    [train] epoch  40/50  reg=0.0127 ce=0.0000
+    [train] epoch  50/50  reg=0.0100 ce=0.0000
+[seed 56] 3-way=86.21%  rec={'IR021': 77.9, 'B021': 95.5, 'OR021': 85.2}
+    [train] epoch  10/50  reg=0.0600 ce=0.0000
+    [train] epoch  20/50  reg=0.0377 ce=0.0000
+    [train] epoch  30/50  reg=0.0199 ce=0.0000
+    [train] epoch  40/50  reg=0.0125 ce=0.0000
+    [train] epoch  50/50  reg=0.0105 ce=0.0000
+[seed 63] 3-way=83.02%  rec={'IR021': 58.8, 'B021': 98.9, 'OR021': 91.3}
+    [train] epoch  10/50  reg=0.0611 ce=0.0000
+    [train] epoch  20/50  reg=0.0379 ce=0.0000
+    [train] epoch  30/50  reg=0.0184 ce=0.0000
+    [train] epoch  40/50  reg=0.0123 ce=0.0000
+    [train] epoch  50/50  reg=0.0101 ce=0.0000
+[seed 70] 3-way=85.06%  rec={'IR021': 64.6, 'B021': 98.9, 'OR021': 91.5}
+
+=== CWRU 3-way = 85.96% ± 1.81% ===
+  IR021  recall: 69.26% ± 6.75%
+  B021   recall: 97.29% ± 1.41%
+  OR021  recall: 91.27% ± 3.62%
+
+[已另存] D:\EsAg\esag_fix\results_cwru_multiseed.json

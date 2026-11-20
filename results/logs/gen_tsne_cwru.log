@@ -1,0 +1,10 @@
+[data] n=5886 seen=['Normal', 'IR007', 'IR014', 'B007', 'B014', 'OR007', 'OR014'] unseen=['IR021', 'B021', 'OR021']
+[prep] precomputing CWT images...
+D:\Anaconda\envs\esag\lib\site-packages\torch\optim\lr_scheduler.py:198: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+    [train] epoch  10/50  reg=0.0577 ce=0.0000
+    [train] epoch  20/50  reg=0.0400 ce=0.0000
+    [train] epoch  30/50  reg=0.0203 ce=0.0000
+    [train] epoch  40/50  reg=0.0124 ce=0.0000
+    [train] epoch  50/50  reg=0.0106 ce=0.0000
+[saved] D:/EsAg/fig_tsne_cwru.png

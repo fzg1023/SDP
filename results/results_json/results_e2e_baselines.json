@@ -1,0 +1,49 @@
+{
+  "note": "端到端强基线 DAP/SAE（small CNN，放开骨干，3 seed × 5 对，协议同 SDP）",
+  "seeds": [
+    42,
+    49,
+    56
+  ],
+  "epochs": 50,
+  "backbone": "small",
+  "attr_holdout": 0.2,
+  "annot_seed": 42,
+  "attr_dim": 21,
+  "rows": [
+    {
+      "pair": "健康/裂纹",
+      "attr_cos": -0.301,
+      "DAP_e2e": 0.6248,
+      "SAE_e2e": 0.6255
+    },
+    {
+      "pair": "剥落/磨损",
+      "attr_cos": -0.174,
+      "DAP_e2e": 0.616,
+      "SAE_e2e": 0.5974
+    },
+    {
+      "pair": "断齿/磨损",
+      "attr_cos": -0.411,
+      "DAP_e2e": 0.8255,
+      "SAE_e2e": 0.8446
+    },
+    {
+      "pair": "剥落/裂纹",
+      "attr_cos": -0.653,
+      "DAP_e2e": 0.6195,
+      "SAE_e2e": 0.6085
+    },
+    {
+      "pair": "剥落/断齿",
+      "attr_cos": -0.462,
+      "DAP_e2e": 0.6942,
+      "SAE_e2e": 0.6956
+    }
+  ],
+  "mean": {
+    "DAP_e2e": 0.676,
+    "SAE_e2e": 0.6743
+  }
+}

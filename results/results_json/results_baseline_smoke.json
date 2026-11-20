@@ -1,0 +1,44 @@
+{
+  "note": "ESAG baseline 公平对比（共享冻结分类 backbone，严格 inductive，3 seed × 5 对）",
+  "seeds": [
+    42
+  ],
+  "backbone_epochs": 2,
+  "attr_holdout": 0.2,
+  "annot_seed": 42,
+  "attr_dim": 21,
+  "methods": [
+    "DAP",
+    "SAE",
+    "ESZSL",
+    "ALE",
+    "SJE",
+    "Ours"
+  ],
+  "rows": [
+    {
+      "pair": "健康/裂纹",
+      "seen": [
+        "剥落",
+        "断齿",
+        "磨损"
+      ],
+      "attr_cos": -0.301,
+      "n": 1297,
+      "DAP": 0.6307,
+      "SAE": 0.5528,
+      "ESZSL": 0.2722,
+      "ALE": 0.3832,
+      "SJE": 0.4541,
+      "Ours": 0.6291
+    }
+  ],
+  "mean": {
+    "DAP": 0.6307,
+    "SAE": 0.5528,
+    "ESZSL": 0.2722,
+    "ALE": 0.3832,
+    "SJE": 0.4541,
+    "Ours": 0.6291
+  }
+}

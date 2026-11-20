@@ -1,0 +1,69 @@
+{
+  "note": "ESAG 真零样本 SDUST 版（留严重度 7/3：seen 7 类 / unseen 3 重度，6 通道全用）",
+  "dataset": "SDUST",
+  "seeds": [
+    42
+  ],
+  "epochs": 1,
+  "lr": 0.0005,
+  "wd": 0.001,
+  "drop_path": 0.3,
+  "backbone": "small",
+  "signal_length": 4096,
+  "windows_per_file": 24,
+  "sample_rate": 25600,
+  "n_channels": 6,
+  "attr_holdout": 0.2,
+  "annot_seed": 42,
+  "attr_dim": 21,
+  "n_total": 1440,
+  "seen": [
+    "NC",
+    "IF0.2",
+    "IF0.4",
+    "OF0.2",
+    "OF0.4",
+    "RF0.2",
+    "RF0.4"
+  ],
+  "unseen": [
+    "IF0.6",
+    "OF0.6",
+    "RF0.6"
+  ],
+  "three_way_accuracy": 0.3333,
+  "three_way_ceiling": 0.7536,
+  "three_way_recall": {
+    "IF0.6": 1.0,
+    "OF0.6": 0.0,
+    "RF0.6": 0.0
+  },
+  "three_way_recall_ceiling": {
+    "IF0.6": 0.9391,
+    "OF0.6": 0.4522,
+    "RF0.6": 0.8696
+  },
+  "pairwise": [
+    {
+      "pair": "IF0.6/OF0.6",
+      "attr_cos": -0.484,
+      "unseen_accuracy": 0.5,
+      "ceiling": 0.887,
+      "n": 230
+    },
+    {
+      "pair": "IF0.6/RF0.6",
+      "attr_cos": -0.75,
+      "unseen_accuracy": 0.5,
+      "ceiling": 0.9304,
+      "n": 230
+    },
+    {
+      "pair": "OF0.6/RF0.6",
+      "attr_cos": 0.228,
+      "unseen_accuracy": 0.5,
+      "ceiling": 0.7913,
+      "n": 230
+    }
+  ]
+}

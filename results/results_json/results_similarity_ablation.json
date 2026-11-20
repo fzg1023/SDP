@@ -1,0 +1,59 @@
+{
+  "note": "语义点积必要性消融：同一投影特征/原型下 4 种零样本匹配度量，5 对 × 3 seed",
+  "seeds": [
+    42,
+    49,
+    56
+  ],
+  "epochs": 50,
+  "backbone": "small",
+  "metrics": [
+    "cosine",
+    "raw_dot",
+    "euclidean",
+    "manhattan"
+  ],
+  "rows": [
+    {
+      "pair": "健康/裂纹",
+      "cosine": 0.6248,
+      "raw_dot": 0.6237,
+      "euclidean": 0.6628,
+      "manhattan": 0.6435
+    },
+    {
+      "pair": "剥落/磨损",
+      "cosine": 0.616,
+      "raw_dot": 0.6173,
+      "euclidean": 0.6127,
+      "manhattan": 0.625
+    },
+    {
+      "pair": "断齿/磨损",
+      "cosine": 0.8255,
+      "raw_dot": 0.8257,
+      "euclidean": 0.826,
+      "manhattan": 0.8025
+    },
+    {
+      "pair": "剥落/裂纹",
+      "cosine": 0.6195,
+      "raw_dot": 0.6193,
+      "euclidean": 0.6425,
+      "manhattan": 0.6223
+    },
+    {
+      "pair": "剥落/断齿",
+      "cosine": 0.6942,
+      "raw_dot": 0.7042,
+      "euclidean": 0.7132,
+      "manhattan": 0.7338
+    }
+  ],
+  "mean": {
+    "cosine": 0.676,
+    "raw_dot": 0.678,
+    "euclidean": 0.6914,
+    "manhattan": 0.6854
+  }
+}

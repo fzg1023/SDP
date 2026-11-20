@@ -1,0 +1,340 @@
+[info] FR=16.67Hz FM=916.67Hz FR_NORM=0.0022 FM_NORM=0.1194
+[data] n=4321 classes=['健康', '剥落', '断齿', '磨损', '裂纹']
+[prep] precomputing images...
+[prep] zsl images=(3457, 2, 64, 64)
+
+=== 健康/剥落 | seen=['断齿', '磨损', '裂纹'] ===
+D:\Anaconda\envs\esag\lib\site-packages\torch\optim\lr_scheduler.py:198: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+    [train] epoch  10/50  reg=0.0665 ce=0.0000
+    [train] epoch  20/50  reg=0.0368 ce=0.0000
+    [train] epoch  30/50  reg=0.0267 ce=0.0000
+    [train] epoch  40/50  reg=0.0167 ce=0.0000
+    [train] epoch  50/50  reg=0.0135 ce=0.0000
+  [seed 42] sample=61.98% mech=31.03%
+    [train] epoch  10/50  reg=0.0590 ce=0.0000
+    [train] epoch  20/50  reg=0.0380 ce=0.0000
+    [train] epoch  30/50  reg=0.0240 ce=0.0000
+    [train] epoch  40/50  reg=0.0150 ce=0.0000
+    [train] epoch  50/50  reg=0.0125 ce=0.0000
+  [seed 49] sample=62.50% mech=31.03%
+    [train] epoch  10/50  reg=0.0594 ce=0.0000
+    [train] epoch  20/50  reg=0.0366 ce=0.0000
+    [train] epoch  30/50  reg=0.0251 ce=0.0000
+    [train] epoch  40/50  reg=0.0147 ce=0.0000
+    [train] epoch  50/50  reg=0.0122 ce=0.0000
+  [seed 56] sample=64.31% mech=31.03%
+    [train] epoch  10/50  reg=0.0664 ce=0.0000
+    [train] epoch  20/50  reg=0.0358 ce=0.0000
+    [train] epoch  30/50  reg=0.0248 ce=0.0000
+    [train] epoch  40/50  reg=0.0165 ce=0.0000
+    [train] epoch  50/50  reg=0.0136 ce=0.0000
+  [seed 63] sample=61.12% mech=31.03%
+    [train] epoch  10/50  reg=0.0647 ce=0.0000
+    [train] epoch  20/50  reg=0.0348 ce=0.0000
+    [train] epoch  30/50  reg=0.0263 ce=0.0000
+    [train] epoch  40/50  reg=0.0145 ce=0.0000
+    [train] epoch  50/50  reg=0.0122 ce=0.0000
+  [seed 70] sample=59.57% mech=31.03%
+  [健康/剥落] sample=61.90% mech=31.03%
+
+=== 健康/断齿 | seen=['剥落', '磨损', '裂纹'] ===
+    [train] epoch  10/50  reg=0.0659 ce=0.0000
+    [train] epoch  20/50  reg=0.0433 ce=0.0000
+    [train] epoch  30/50  reg=0.0251 ce=0.0000
+    [train] epoch  40/50  reg=0.0157 ce=0.0000
+    [train] epoch  50/50  reg=0.0135 ce=0.0000
+  [seed 42] sample=81.50% mech=36.00%
+    [train] epoch  10/50  reg=0.0702 ce=0.0000
+    [train] epoch  20/50  reg=0.0398 ce=0.0000
+    [train] epoch  30/50  reg=0.0238 ce=0.0000
+    [train] epoch  40/50  reg=0.0165 ce=0.0000
+    [train] epoch  50/50  reg=0.0132 ce=0.0000
+  [seed 49] sample=80.60% mech=36.00%
+    [train] epoch  10/50  reg=0.0824 ce=0.0000
+    [train] epoch  20/50  reg=0.0412 ce=0.0000
+    [train] epoch  30/50  reg=0.0267 ce=0.0000
+    [train] epoch  40/50  reg=0.0150 ce=0.0000
+    [train] epoch  50/50  reg=0.0122 ce=0.0000
+  [seed 56] sample=80.40% mech=36.00%
+    [train] epoch  10/50  reg=0.0823 ce=0.0000
+    [train] epoch  20/50  reg=0.0415 ce=0.0000
+    [train] epoch  30/50  reg=0.0274 ce=0.0000
+    [train] epoch  40/50  reg=0.0166 ce=0.0000
+    [train] epoch  50/50  reg=0.0134 ce=0.0000
+  [seed 63] sample=80.40% mech=36.00%
+    [train] epoch  10/50  reg=0.0796 ce=0.0000
+    [train] epoch  20/50  reg=0.0434 ce=0.0000
+    [train] epoch  30/50  reg=0.0265 ce=0.0000
+    [train] epoch  40/50  reg=0.0165 ce=0.0000
+    [train] epoch  50/50  reg=0.0127 ce=0.0000
+  [seed 70] sample=81.10% mech=36.00%
+  [健康/断齿] sample=80.80% mech=36.00%
+
+=== 健康/磨损 | seen=['剥落', '断齿', '裂纹'] ===
+    [train] epoch  10/50  reg=0.0728 ce=0.0000
+    [train] epoch  20/50  reg=0.0398 ce=0.0000
+    [train] epoch  30/50  reg=0.0252 ce=0.0000
+    [train] epoch  40/50  reg=0.0163 ce=0.0000
+    [train] epoch  50/50  reg=0.0128 ce=0.0000
+  [seed 42] sample=76.94% mech=33.33%
+    [train] epoch  10/50  reg=0.0713 ce=0.0000
+    [train] epoch  20/50  reg=0.0466 ce=0.0000
+    [train] epoch  30/50  reg=0.0275 ce=0.0000
+    [train] epoch  40/50  reg=0.0164 ce=0.0000
+    [train] epoch  50/50  reg=0.0123 ce=0.0000
+  [seed 49] sample=73.06% mech=33.33%
+    [train] epoch  10/50  reg=0.0717 ce=0.0000
+    [train] epoch  20/50  reg=0.0421 ce=0.0000
+    [train] epoch  30/50  reg=0.0290 ce=0.0000
+    [train] epoch  40/50  reg=0.0152 ce=0.0000
+    [train] epoch  50/50  reg=0.0123 ce=0.0000
+  [seed 56] sample=71.85% mech=33.33%
+    [train] epoch  10/50  reg=0.0740 ce=0.0000
+    [train] epoch  20/50  reg=0.0381 ce=0.0000
+    [train] epoch  30/50  reg=0.0255 ce=0.0000
+    [train] epoch  40/50  reg=0.0150 ce=0.0000
+    [train] epoch  50/50  reg=0.0122 ce=0.0000
+  [seed 63] sample=76.20% mech=33.33%
+    [train] epoch  10/50  reg=0.0660 ce=0.0000
+    [train] epoch  20/50  reg=0.0430 ce=0.0000
+    [train] epoch  30/50  reg=0.0264 ce=0.0000
+    [train] epoch  40/50  reg=0.0152 ce=0.0000
+    [train] epoch  50/50  reg=0.0121 ce=0.0000
+  [seed 70] sample=75.09% mech=33.33%
+  [健康/磨损] sample=74.63% mech=33.33%
+
+=== 健康/裂纹 | seen=['剥落', '断齿', '磨损'] ===
+    [train] epoch  10/50  reg=0.0691 ce=0.0000
+    [train] epoch  20/50  reg=0.0387 ce=0.0000
+    [train] epoch  30/50  reg=0.0230 ce=0.0000
+    [train] epoch  40/50  reg=0.0151 ce=0.0000
+    [train] epoch  50/50  reg=0.0125 ce=0.0000
+  [seed 42] sample=62.53% mech=27.76%
+    [train] epoch  10/50  reg=0.0712 ce=0.0000
+    [train] epoch  20/50  reg=0.0363 ce=0.0000
+    [train] epoch  30/50  reg=0.0238 ce=0.0000
+    [train] epoch  40/50  reg=0.0155 ce=0.0000
+    [train] epoch  50/50  reg=0.0118 ce=0.0000
+  [seed 49] sample=61.76% mech=27.76%
+    [train] epoch  10/50  reg=0.0575 ce=0.0000
+    [train] epoch  20/50  reg=0.0439 ce=0.0000
+    [train] epoch  30/50  reg=0.0250 ce=0.0000
+    [train] epoch  40/50  reg=0.0148 ce=0.0000
+    [train] epoch  50/50  reg=0.0114 ce=0.0000
+  [seed 56] sample=63.15% mech=27.76%
+    [train] epoch  10/50  reg=0.0650 ce=0.0000
+    [train] epoch  20/50  reg=0.0440 ce=0.0000
+    [train] epoch  30/50  reg=0.0255 ce=0.0000
+    [train] epoch  40/50  reg=0.0156 ce=0.0000
+    [train] epoch  50/50  reg=0.0131 ce=0.0000
+  [seed 63] sample=62.14% mech=27.76%
+    [train] epoch  10/50  reg=0.0621 ce=0.0000
+    [train] epoch  20/50  reg=0.0425 ce=0.0000
+    [train] epoch  30/50  reg=0.0253 ce=0.0000
+    [train] epoch  40/50  reg=0.0149 ce=0.0000
+    [train] epoch  50/50  reg=0.0121 ce=0.0000
+  [seed 70] sample=63.30% mech=27.76%
+  [健康/裂纹] sample=62.58% mech=27.76%
+
+=== 剥落/断齿 | seen=['健康', '磨损', '裂纹'] ===
+    [train] epoch  10/50  reg=0.0648 ce=0.0000
+    [train] epoch  20/50  reg=0.0372 ce=0.0000
+    [train] epoch  30/50  reg=0.0272 ce=0.0000
+    [train] epoch  40/50  reg=0.0164 ce=0.0000
+    [train] epoch  50/50  reg=0.0125 ce=0.0000
+  [seed 42] sample=70.14% mech=55.56%
+    [train] epoch  10/50  reg=0.0812 ce=0.0000
+    [train] epoch  20/50  reg=0.0386 ce=0.0000
+    [train] epoch  30/50  reg=0.0285 ce=0.0000
+    [train] epoch  40/50  reg=0.0158 ce=0.0000
+    [train] epoch  50/50  reg=0.0134 ce=0.0000
+  [seed 49] sample=69.17% mech=55.56%
+    [train] epoch  10/50  reg=0.0645 ce=0.0000
+    [train] epoch  20/50  reg=0.0434 ce=0.0000
+    [train] epoch  30/50  reg=0.0234 ce=0.0000
+    [train] epoch  40/50  reg=0.0162 ce=0.0000
+    [train] epoch  50/50  reg=0.0129 ce=0.0000
+  [seed 56] sample=68.96% mech=55.56%
+    [train] epoch  10/50  reg=0.0722 ce=0.0000
+    [train] epoch  20/50  reg=0.0453 ce=0.0000
+    [train] epoch  30/50  reg=0.0254 ce=0.0000
+    [train] epoch  40/50  reg=0.0163 ce=0.0000
+    [train] epoch  50/50  reg=0.0135 ce=0.0000
+  [seed 63] sample=71.74% mech=55.56%
+    [train] epoch  10/50  reg=0.0591 ce=0.0000
+    [train] epoch  20/50  reg=0.0457 ce=0.0000
+    [train] epoch  30/50  reg=0.0246 ce=0.0000
+    [train] epoch  40/50  reg=0.0155 ce=0.0000
+    [train] epoch  50/50  reg=0.0130 ce=0.0000
+  [seed 70] sample=70.97% mech=55.56%
+  [剥落/断齿] sample=70.19% mech=55.56%
+
+=== 剥落/磨损 | seen=['健康', '断齿', '裂纹'] ===
+    [train] epoch  10/50  reg=0.0721 ce=0.0000
+    [train] epoch  20/50  reg=0.0420 ce=0.0000
+    [train] epoch  30/50  reg=0.0242 ce=0.0000
+    [train] epoch  40/50  reg=0.0159 ce=0.0000
+    [train] epoch  50/50  reg=0.0115 ce=0.0000
+  [seed 42] sample=62.96% mech=52.63%
+    [train] epoch  10/50  reg=0.0743 ce=0.0000
+    [train] epoch  20/50  reg=0.0358 ce=0.0000
+    [train] epoch  30/50  reg=0.0245 ce=0.0000
+    [train] epoch  40/50  reg=0.0157 ce=0.0000
+    [train] epoch  50/50  reg=0.0122 ce=0.0000
+  [seed 49] sample=62.24% mech=52.63%
+    [train] epoch  10/50  reg=0.0660 ce=0.0000
+    [train] epoch  20/50  reg=0.0413 ce=0.0000
+    [train] epoch  30/50  reg=0.0220 ce=0.0000
+    [train] epoch  40/50  reg=0.0141 ce=0.0000
+    [train] epoch  50/50  reg=0.0127 ce=0.0000
+  [seed 56] sample=59.61% mech=52.63%
+    [train] epoch  10/50  reg=0.0628 ce=0.0000
+    [train] epoch  20/50  reg=0.0355 ce=0.0000
+    [train] epoch  30/50  reg=0.0235 ce=0.0000
+    [train] epoch  40/50  reg=0.0146 ce=0.0000
+    [train] epoch  50/50  reg=0.0117 ce=0.0000
+  [seed 63] sample=59.93% mech=52.63%
+    [train] epoch  10/50  reg=0.0666 ce=0.0000
+    [train] epoch  20/50  reg=0.0501 ce=0.0000
+    [train] epoch  30/50  reg=0.0227 ce=0.0000
+    [train] epoch  40/50  reg=0.0150 ce=0.0000
+    [train] epoch  50/50  reg=0.0114 ce=0.0000
+  [seed 70] sample=58.88% mech=52.63%
+  [剥落/磨损] sample=60.72% mech=52.63%
+
+=== 剥落/裂纹 | seen=['健康', '断齿', '磨损'] ===
+    [train] epoch  10/50  reg=0.0591 ce=0.0000
+    [train] epoch  20/50  reg=0.0387 ce=0.0000
+    [train] epoch  30/50  reg=0.0223 ce=0.0000
+    [train] epoch  40/50  reg=0.0167 ce=0.0000
+    [train] epoch  50/50  reg=0.0114 ce=0.0000
+  [seed 42] sample=62.81% mech=46.06%
+    [train] epoch  10/50  reg=0.0569 ce=0.0000
+    [train] epoch  20/50  reg=0.0360 ce=0.0000
+    [train] epoch  30/50  reg=0.0215 ce=0.0000
+    [train] epoch  40/50  reg=0.0143 ce=0.0000
+    [train] epoch  50/50  reg=0.0116 ce=0.0000
+  [seed 49] sample=61.49% mech=46.06%
+    [train] epoch  10/50  reg=0.0572 ce=0.0000
+    [train] epoch  20/50  reg=0.0380 ce=0.0000
+    [train] epoch  30/50  reg=0.0226 ce=0.0000
+    [train] epoch  40/50  reg=0.0137 ce=0.0000
+    [train] epoch  50/50  reg=0.0113 ce=0.0000
+  [seed 56] sample=61.54% mech=46.06%
+    [train] epoch  10/50  reg=0.0542 ce=0.0000
+    [train] epoch  20/50  reg=0.0326 ce=0.0000
+    [train] epoch  30/50  reg=0.0231 ce=0.0000
+    [train] epoch  40/50  reg=0.0150 ce=0.0000
+    [train] epoch  50/50  reg=0.0120 ce=0.0000
+  [seed 63] sample=62.46% mech=46.06%
+    [train] epoch  10/50  reg=0.0589 ce=0.0000
+    [train] epoch  20/50  reg=0.0318 ce=0.0000
+    [train] epoch  30/50  reg=0.0205 ce=0.0000
+    [train] epoch  40/50  reg=0.0134 ce=0.0000
+    [train] epoch  50/50  reg=0.0112 ce=0.0000
+  [seed 70] sample=63.67% mech=46.06%
+  [剥落/裂纹] sample=62.39% mech=46.06%
+
+=== 断齿/磨损 | seen=['健康', '剥落', '裂纹'] ===
+    [train] epoch  10/50  reg=0.0799 ce=0.0000
+    [train] epoch  20/50  reg=0.0450 ce=0.0000
+    [train] epoch  30/50  reg=0.0262 ce=0.0000
+    [train] epoch  40/50  reg=0.0155 ce=0.0000
+    [train] epoch  50/50  reg=0.0128 ce=0.0000
+  [seed 42] sample=83.09% mech=47.06%
+    [train] epoch  10/50  reg=0.0823 ce=0.0000
+    [train] epoch  20/50  reg=0.0451 ce=0.0000
+    [train] epoch  30/50  reg=0.0249 ce=0.0000
+    [train] epoch  40/50  reg=0.0174 ce=0.0000
+    [train] epoch  50/50  reg=0.0123 ce=0.0000
+  [seed 49] sample=82.13% mech=47.06%
+    [train] epoch  10/50  reg=0.0758 ce=0.0000
+    [train] epoch  20/50  reg=0.0428 ce=0.0000
+    [train] epoch  30/50  reg=0.0275 ce=0.0000
+    [train] epoch  40/50  reg=0.0157 ce=0.0000
+    [train] epoch  50/50  reg=0.0127 ce=0.0000
+  [seed 56] sample=82.43% mech=47.06%
+    [train] epoch  10/50  reg=0.0723 ce=0.0000
+    [train] epoch  20/50  reg=0.0453 ce=0.0000
+    [train] epoch  30/50  reg=0.0278 ce=0.0000
+    [train] epoch  40/50  reg=0.0178 ce=0.0000
+    [train] epoch  50/50  reg=0.0127 ce=0.0000
+  [seed 63] sample=83.24% mech=47.06%
+    [train] epoch  10/50  reg=0.0739 ce=0.0000
+    [train] epoch  20/50  reg=0.0432 ce=0.0000
+    [train] epoch  30/50  reg=0.0269 ce=0.0000
+    [train] epoch  40/50  reg=0.0167 ce=0.0000
+    [train] epoch  50/50  reg=0.0132 ce=0.0000
+  [seed 70] sample=83.82% mech=47.06%
+  [断齿/磨损] sample=82.94% mech=47.06%
+
+=== 断齿/裂纹 | seen=['健康', '剥落', '磨损'] ===
+    [train] epoch  10/50  reg=0.0699 ce=0.0000
+    [train] epoch  20/50  reg=0.0380 ce=0.0000
+    [train] epoch  30/50  reg=0.0228 ce=0.0000
+    [train] epoch  40/50  reg=0.0166 ce=0.0000
+    [train] epoch  50/50  reg=0.0122 ce=0.0000
+  [seed 42] sample=58.91% mech=40.58%
+    [train] epoch  10/50  reg=0.0662 ce=0.0000
+    [train] epoch  20/50  reg=0.0362 ce=0.0000
+    [train] epoch  30/50  reg=0.0228 ce=0.0000
+    [train] epoch  40/50  reg=0.0161 ce=0.0000
+    [train] epoch  50/50  reg=0.0121 ce=0.0000
+  [seed 49] sample=58.08% mech=40.58%
+    [train] epoch  10/50  reg=0.0660 ce=0.0000
+    [train] epoch  20/50  reg=0.0367 ce=0.0000
+    [train] epoch  30/50  reg=0.0241 ce=0.0000
+    [train] epoch  40/50  reg=0.0156 ce=0.0000
+    [train] epoch  50/50  reg=0.0120 ce=0.0000
+  [seed 56] sample=60.18% mech=40.58%
+    [train] epoch  10/50  reg=0.0728 ce=0.0000
+    [train] epoch  20/50  reg=0.0411 ce=0.0000
+    [train] epoch  30/50  reg=0.0262 ce=0.0000
+    [train] epoch  40/50  reg=0.0165 ce=0.0000
+    [train] epoch  50/50  reg=0.0122 ce=0.0000
+  [seed 63] sample=58.78% mech=40.58%
+    [train] epoch  10/50  reg=0.0715 ce=0.0000
+    [train] epoch  20/50  reg=0.0380 ce=0.0000
+    [train] epoch  30/50  reg=0.0259 ce=0.0000
+    [train] epoch  40/50  reg=0.0164 ce=0.0000
+    [train] epoch  50/50  reg=0.0122 ce=0.0000
+  [seed 70] sample=57.13% mech=40.58%
+  [断齿/裂纹] sample=58.62% mech=40.58%
+
+=== 磨损/裂纹 | seen=['健康', '剥落', '断齿'] ===
+    [train] epoch  10/50  reg=0.0703 ce=0.0000
+    [train] epoch  20/50  reg=0.0354 ce=0.0000
+    [train] epoch  30/50  reg=0.0249 ce=0.0000
+    [train] epoch  40/50  reg=0.0156 ce=0.0000
+    [train] epoch  50/50  reg=0.0123 ce=0.0000
+  [seed 42] sample=75.02% mech=43.45%
+    [train] epoch  10/50  reg=0.0660 ce=0.0000
+    [train] epoch  20/50  reg=0.0358 ce=0.0000
+    [train] epoch  30/50  reg=0.0242 ce=0.0000
+    [train] epoch  40/50  reg=0.0137 ce=0.0000
+    [train] epoch  50/50  reg=0.0114 ce=0.0000
+  [seed 49] sample=74.23% mech=43.45%
+    [train] epoch  10/50  reg=0.0662 ce=0.0000
+    [train] epoch  20/50  reg=0.0392 ce=0.0000
+    [train] epoch  30/50  reg=0.0233 ce=0.0000
+    [train] epoch  40/50  reg=0.0152 ce=0.0000
+    [train] epoch  50/50  reg=0.0109 ce=0.0000
+  [seed 56] sample=74.53% mech=43.45%
+    [train] epoch  10/50  reg=0.0642 ce=0.0000
+    [train] epoch  20/50  reg=0.0386 ce=0.0000
+    [train] epoch  30/50  reg=0.0279 ce=0.0000
+    [train] epoch  40/50  reg=0.0148 ce=0.0000
+    [train] epoch  50/50  reg=0.0121 ce=0.0000
+  [seed 63] sample=75.20% mech=43.45%
+    [train] epoch  10/50  reg=0.0639 ce=0.0000
+    [train] epoch  20/50  reg=0.0383 ce=0.0000
+    [train] epoch  30/50  reg=0.0248 ce=0.0000
+    [train] epoch  40/50  reg=0.0144 ce=0.0000
+    [train] epoch  50/50  reg=0.0116 ce=0.0000
+  [seed 70] sample=74.83% mech=43.45%
+  [磨损/裂纹] sample=74.76% mech=43.45%
+
+[已另存] D:\EsAg\esag_fix\results_gear_10pairs_mechproto.json
+sample 10对均值=68.95% ± 0.37%
+mech   10对均值=41.35% ± 0.00%

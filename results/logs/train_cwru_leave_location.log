@@ -1,0 +1,72 @@
+[data] n=5886 classes=['Normal', 'IR007', 'IR014', 'IR021', 'B007', 'B014', 'B021', 'OR007', 'OR014', 'OR021']
+[prep] precomputing CWT images...
+[prep] zsl images=(4710, 2, 64, 64)
+
+=== hold IR | seen=['Normal', 'B007', 'B014', 'B021', 'OR007', 'OR014', 'OR021'] unseen=['IR007', 'IR014', 'IR021'] ===
+D:\Anaconda\envs\esag\lib\site-packages\torch\optim\lr_scheduler.py:198: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+    [train] epoch  10/50  reg=0.0623 ce=0.0000
+    [train] epoch  20/50  reg=0.0415 ce=0.0000
+    [train] epoch  30/50  reg=0.0214 ce=0.0000
+    [train] epoch  40/50  reg=0.0135 ce=0.0000
+    [train] epoch  50/50  reg=0.0111 ce=0.0000
+  [seed 42] 3-way=89.98%  rec={'IR007': 100.0, 'IR014': 73.0, 'IR021': 96.8}
+    [train] epoch  10/50  reg=0.0655 ce=0.0000
+    [train] epoch  20/50  reg=0.0386 ce=0.0000
+    [train] epoch  30/50  reg=0.0196 ce=0.0000
+    [train] epoch  40/50  reg=0.0139 ce=0.0000
+    [train] epoch  50/50  reg=0.0108 ce=0.0000
+  [seed 49] 3-way=91.13%  rec={'IR007': 100.0, 'IR014': 74.6, 'IR021': 98.7}
+    [train] epoch  10/50  reg=0.0612 ce=0.0000
+    [train] epoch  20/50  reg=0.0419 ce=0.0000
+    [train] epoch  30/50  reg=0.0208 ce=0.0000
+    [train] epoch  40/50  reg=0.0126 ce=0.0000
+    [train] epoch  50/50  reg=0.0108 ce=0.0000
+  [seed 56] 3-way=86.97%  rec={'IR007': 100.0, 'IR014': 61.5, 'IR021': 99.2}
+  [IR] 3-way = 89.36% ± 1.76%  (ceiling 100.00%, chance 33.3%)
+
+=== hold B | seen=['Normal', 'IR007', 'IR014', 'IR021', 'OR007', 'OR014', 'OR021'] unseen=['B007', 'B014', 'B021'] ===
+    [train] epoch  10/50  reg=0.0623 ce=0.0000
+    [train] epoch  20/50  reg=0.0370 ce=0.0000
+    [train] epoch  30/50  reg=0.0198 ce=0.0000
+    [train] epoch  40/50  reg=0.0132 ce=0.0000
+    [train] epoch  50/50  reg=0.0110 ce=0.0000
+  [seed 42] 3-way=68.73%  rec={'B007': 68.0, 'B014': 47.2, 'B021': 91.0}
+    [train] epoch  10/50  reg=0.0601 ce=0.0000
+    [train] epoch  20/50  reg=0.0361 ce=0.0000
+    [train] epoch  30/50  reg=0.0223 ce=0.0000
+    [train] epoch  40/50  reg=0.0129 ce=0.0000
+    [train] epoch  50/50  reg=0.0107 ce=0.0000
+  [seed 49] 3-way=65.54%  rec={'B007': 48.5, 'B014': 55.2, 'B021': 92.8}
+    [train] epoch  10/50  reg=0.0556 ce=0.0000
+    [train] epoch  20/50  reg=0.0344 ce=0.0000
+    [train] epoch  30/50  reg=0.0197 ce=0.0000
+    [train] epoch  40/50  reg=0.0123 ce=0.0000
+    [train] epoch  50/50  reg=0.0101 ce=0.0000
+  [seed 56] 3-way=75.20%  rec={'B007': 80.8, 'B014': 55.4, 'B021': 89.4}
+  [B] 3-way = 69.83% ± 4.02%  (ceiling 90.26%, chance 33.3%)
+
+=== hold OR | seen=['Normal', 'IR007', 'IR014', 'IR021', 'B007', 'B014', 'B021'] unseen=['OR007', 'OR014', 'OR021'] ===
+    [train] epoch  10/50  reg=0.0559 ce=0.0000
+    [train] epoch  20/50  reg=0.0384 ce=0.0000
+    [train] epoch  30/50  reg=0.0205 ce=0.0000
+    [train] epoch  40/50  reg=0.0122 ce=0.0000
+    [train] epoch  50/50  reg=0.0103 ce=0.0000
+  [seed 42] 3-way=99.38%  rec={'OR007': 100.0, 'OR014': 100.0, 'OR021': 98.1}
+    [train] epoch  10/50  reg=0.0566 ce=0.0000
+    [train] epoch  20/50  reg=0.0363 ce=0.0000
+    [train] epoch  30/50  reg=0.0191 ce=0.0000
+    [train] epoch  40/50  reg=0.0126 ce=0.0000
+    [train] epoch  50/50  reg=0.0100 ce=0.0000
+  [seed 49] 3-way=100.00%  rec={'OR007': 100.0, 'OR014': 100.0, 'OR021': 100.0}
+    [train] epoch  10/50  reg=0.0605 ce=0.0000
+    [train] epoch  20/50  reg=0.0388 ce=0.0000
+    [train] epoch  30/50  reg=0.0182 ce=0.0000
+    [train] epoch  40/50  reg=0.0126 ce=0.0000
+    [train] epoch  50/50  reg=0.0097 ce=0.0000
+  [seed 56] 3-way=98.50%  rec={'OR007': 100.0, 'OR014': 100.0, 'OR021': 95.5}
+  [OR] 3-way = 99.29% ± 0.62%  (ceiling 99.82%, chance 33.3%)
+
+=== 三部位平均 = 86.16% ===
+
+[已另存] D:\EsAg\esag_fix\results_cwru_leave_location.json
